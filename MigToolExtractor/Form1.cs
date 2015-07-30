@@ -30,14 +30,14 @@ namespace MigToolExtractor
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
 
         }
 
         public void TestFastZipUnpack(string zipFileName, string targetDir)
         {
 
-            _totalFileCount = 1000;//FolderContentsCount(@"C:\Temp\Danilo\fastzip");
+            _totalFileCount = 41;//FolderContentsCount(@"C:\Temp\Danilo\fastzip");
 
             FastZipEvents events = new FastZipEvents();
             events.ProcessFile = ProcessFileMethod;
@@ -49,7 +49,7 @@ namespace MigToolExtractor
             fastZip.ExtractZip(zipFileName, targetDir, fileFilter);
         }
 
-
+    
         private void ProcessFileMethod(object sender, ScanEventArgs args)
         {
             _uptoFileCount++;
