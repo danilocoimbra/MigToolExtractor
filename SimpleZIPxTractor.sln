@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigToolExtractor", "MigToolExtractor\MigToolExtractor.csproj", "{3E444600-D2C9-4045-A9C4-8B1216335921}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleZIPxTractor", "MigToolExtractor\SimpleZIPxTractor.csproj", "{3E444600-D2C9-4045-A9C4-8B1216335921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
