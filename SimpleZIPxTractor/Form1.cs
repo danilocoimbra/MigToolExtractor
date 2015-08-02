@@ -61,7 +61,7 @@ namespace SimpleZIPxTractor
 
         public void UnZip(string zipName, string FolderDestination)
         {
-            label1.SafeInvoke(d => d.Text = "Restoring zip file to folder " + FolderDestination + ". Wait!");
+            label1.SafeInvoke(d => d.Text = "Extracting files to folder " + FolderDestination + ". Wait!");
             try
             {
                 FastZipEvents zipevents = new FastZipEvents();
@@ -131,6 +131,11 @@ namespace SimpleZIPxTractor
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             DialogResult result = fbd.ShowDialog();
             textBox2.SafeInvoke(d => d.Text = fbd.SelectedPath);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
         }
     }
 }
